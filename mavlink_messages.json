@@ -1,0 +1,2174 @@
+[
+    {
+        "mavpackettype": "GLOBAL_POSITION_INT",
+        "time_boot_ms": 68336,
+        "lat": 0,
+        "lon": 0,
+        "alt": 390,
+        "relative_alt": 392,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "hdg": 7479
+    },
+    {
+        "mavpackettype": "SYSTEM_TIME",
+        "time_unix_usec": 0,
+        "time_boot_ms": 68336
+    },
+    {
+        "mavpackettype": "AHRS",
+        "omegaIx": -0.00368371675722301,
+        "omegaIy": 0.004648619331419468,
+        "omegaIz": -0.001360008493065834,
+        "accel_weight": 0.0,
+        "renorm_val": 0.0,
+        "error_rp": 0.00630019698292017,
+        "error_yaw": 0.006520519498735666
+    },
+    {
+        "mavpackettype": "WIND",
+        "direction": -180.0,
+        "speed": 0.0,
+        "speed_z": 0.0
+    },
+    {
+        "mavpackettype": "TERRAIN_REPORT",
+        "lat": 0,
+        "lon": 0,
+        "spacing": 100,
+        "terrain_height": 0.0,
+        "current_height": 0.0,
+        "pending": 0,
+        "loaded": 0
+    },
+    {
+        "mavpackettype": "EKF_STATUS_REPORT",
+        "flags": 1024,
+        "velocity_variance": 0.0,
+        "pos_horiz_variance": 0.0,
+        "pos_vert_variance": 0.0,
+        "compass_variance": 0.0,
+        "terrain_alt_variance": 0.0,
+        "airspeed_variance": 0.0
+    },
+    {
+        "mavpackettype": "VIBRATION",
+        "time_usec": 68336478,
+        "vibration_x": 0.008212519809603691,
+        "vibration_y": 0.012599249370396137,
+        "vibration_z": 0.016607260331511497,
+        "clipping_0": 0,
+        "clipping_1": 0,
+        "clipping_2": 0
+    },
+    {
+        "mavpackettype": "BATTERY_STATUS",
+        "id": 0,
+        "battery_function": 0,
+        "type": 0,
+        "temperature": 32767,
+        "voltages": [
+            187,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+        ],
+        "current_battery": -678,
+        "current_consumed": -119,
+        "energy_consumed": 0,
+        "battery_remaining": -1,
+        "time_remaining": 0,
+        "charge_state": 6,
+        "voltages_ext": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "mode": 0,
+        "fault_bitmask": 0
+    },
+    {
+        "mavpackettype": "SYS_STATUS",
+        "onboard_control_sensors_present": 325188639,
+        "onboard_control_sensors_enabled": 306249743,
+        "onboard_control_sensors_health": 17858575,
+        "load": 20,
+        "voltage_battery": 187,
+        "current_battery": -1,
+        "battery_remaining": -1,
+        "drop_rate_comm": 0,
+        "errors_comm": 0,
+        "errors_count1": 0,
+        "errors_count2": 0,
+        "errors_count3": 0,
+        "errors_count4": 0
+    },
+    {
+        "mavpackettype": "POWER_STATUS",
+        "Vcc": 5219,
+        "Vservo": 0,
+        "flags": 4
+    },
+    {
+        "mavpackettype": "MEMINFO",
+        "brkval": 0,
+        "freemem": 65535,
+        "freemem32": 615736
+    },
+    {
+        "mavpackettype": "MISSION_CURRENT",
+        "seq": 0,
+        "total": 0,
+        "mission_state": 1,
+        "mission_mode": 0
+    },
+    {
+        "mavpackettype": "SERVO_OUTPUT_RAW",
+        "time_usec": 68336580,
+        "port": 0,
+        "servo1_raw": 1500,
+        "servo2_raw": 1500,
+        "servo3_raw": 1100,
+        "servo4_raw": 1500,
+        "servo5_raw": 0,
+        "servo6_raw": 0,
+        "servo7_raw": 0,
+        "servo8_raw": 0,
+        "servo9_raw": 0,
+        "servo10_raw": 0,
+        "servo11_raw": 0,
+        "servo12_raw": 0,
+        "servo13_raw": 0,
+        "servo14_raw": 0,
+        "servo15_raw": 0,
+        "servo16_raw": 0
+    },
+    {
+        "mavpackettype": "RC_CHANNELS",
+        "time_boot_ms": 68336,
+        "chancount": 0,
+        "chan1_raw": 0,
+        "chan2_raw": 1488,
+        "chan3_raw": 1493,
+        "chan4_raw": 1497,
+        "chan5_raw": 0,
+        "chan6_raw": 0,
+        "chan7_raw": 0,
+        "chan8_raw": 0,
+        "chan9_raw": 0,
+        "chan10_raw": 0,
+        "chan11_raw": 0,
+        "chan12_raw": 0,
+        "chan13_raw": 0,
+        "chan14_raw": 0,
+        "chan15_raw": 0,
+        "chan16_raw": 0,
+        "chan17_raw": 0,
+        "chan18_raw": 0,
+        "rssi": 255
+    },
+    {
+        "mavpackettype": "RAW_IMU",
+        "time_usec": 68336609,
+        "xacc": 38,
+        "yacc": 34,
+        "zacc": -1001,
+        "xgyro": 5,
+        "ygyro": -5,
+        "zgyro": 2,
+        "xmag": 179,
+        "ymag": -651,
+        "zmag": -521,
+        "id": 0,
+        "temperature": 4480
+    },
+    {
+        "mavpackettype": "SCALED_IMU2",
+        "time_boot_ms": 68336,
+        "xacc": 9,
+        "yacc": 17,
+        "zacc": -1000,
+        "xgyro": 0,
+        "ygyro": 0,
+        "zgyro": 0,
+        "xmag": 0,
+        "ymag": 0,
+        "zmag": 0,
+        "temperature": 4650
+    },
+    {
+        "mavpackettype": "SCALED_PRESSURE",
+        "time_boot_ms": 68336,
+        "press_abs": 1008.5532836914062,
+        "press_diff": 0.0,
+        "temperature": 3990,
+        "temperature_press_diff": 0
+    },
+    {
+        "mavpackettype": "GPS_RAW_INT",
+        "time_usec": 0,
+        "fix_type": 0,
+        "lat": 0,
+        "lon": 0,
+        "alt": 0,
+        "eph": 65535,
+        "epv": 65535,
+        "vel": 0,
+        "cog": 0,
+        "satellites_visible": 0,
+        "alt_ellipsoid": 0,
+        "h_acc": 0,
+        "v_acc": 0,
+        "vel_acc": 0,
+        "hdg_acc": 0,
+        "yaw": 0
+    },
+    {
+        "mavpackettype": "MCU_STATUS",
+        "id": 0,
+        "MCU_temperature": 4958,
+        "MCU_voltage": 3225,
+        "MCU_voltage_min": 1785,
+        "MCU_voltage_max": 3240
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 68356,
+        "roll": -0.023680001497268677,
+        "pitch": 0.0025843384210020304,
+        "yaw": 1.305367350578308,
+        "rollspeed": -0.0004406156949698925,
+        "pitchspeed": -0.0015311259776353836,
+        "yawspeed": 0.0009958932641893625
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.38999998569488525,
+        "climb": -0.2755076289176941
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 68356305,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 68436,
+        "roll": -0.023734766989946365,
+        "pitch": 0.002617531456053257,
+        "yaw": 1.305433750152588,
+        "rollspeed": 0.0005702672060579062,
+        "pitchspeed": -0.0008370303548872471,
+        "yawspeed": 0.000336066703312099
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.29999998211860657,
+        "climb": 0.019426872953772545
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 68436320,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 68536,
+        "roll": -0.02375011332333088,
+        "pitch": 0.0026415460743010044,
+        "yaw": 1.3055269718170166,
+        "rollspeed": 0.00018618139438331127,
+        "pitchspeed": -0.0009669670835137367,
+        "yawspeed": 0.0001277646515518427
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.4099999964237213,
+        "climb": 0.2719755172729492
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 68536312,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 68636,
+        "roll": -0.023811930790543556,
+        "pitch": 0.002686154330149293,
+        "yaw": 1.3056029081344604,
+        "rollspeed": 0.0005885346326977015,
+        "pitchspeed": -0.000804584939032793,
+        "yawspeed": -7.854809518903494e-05
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.14000000059604645,
+        "climb": 0.21281197667121887
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 68636317,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "GLOBAL_POSITION_INT",
+        "time_boot_ms": 68696,
+        "lat": 0,
+        "lon": 0,
+        "alt": 370,
+        "relative_alt": 372,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "hdg": 7481
+    },
+    {
+        "mavpackettype": "SYSTEM_TIME",
+        "time_unix_usec": 0,
+        "time_boot_ms": 68696
+    },
+    {
+        "mavpackettype": "AHRS",
+        "omegaIx": -0.00368371675722301,
+        "omegaIy": 0.004648619331419468,
+        "omegaIz": -0.001360008493065834,
+        "accel_weight": 0.0,
+        "renorm_val": 0.0,
+        "error_rp": 0.006128294393420219,
+        "error_yaw": 0.0049992091953754425
+    },
+    {
+        "mavpackettype": "WIND",
+        "direction": -180.0,
+        "speed": 0.0,
+        "speed_z": 0.0
+    },
+    {
+        "mavpackettype": "TERRAIN_REPORT",
+        "lat": 0,
+        "lon": 0,
+        "spacing": 100,
+        "terrain_height": 0.0,
+        "current_height": 0.0,
+        "pending": 0,
+        "loaded": 0
+    },
+    {
+        "mavpackettype": "EKF_STATUS_REPORT",
+        "flags": 1024,
+        "velocity_variance": 0.0,
+        "pos_horiz_variance": 0.0,
+        "pos_vert_variance": 0.0,
+        "compass_variance": 0.0,
+        "terrain_alt_variance": 0.0,
+        "airspeed_variance": 0.0
+    },
+    {
+        "mavpackettype": "VIBRATION",
+        "time_usec": 68716356,
+        "vibration_x": 0.007496562320739031,
+        "vibration_y": 0.007959677837789059,
+        "vibration_z": 0.009550892747938633,
+        "clipping_0": 0,
+        "clipping_1": 0,
+        "clipping_2": 0
+    },
+    {
+        "mavpackettype": "BATTERY_STATUS",
+        "id": 0,
+        "battery_function": 0,
+        "type": 0,
+        "temperature": 32767,
+        "voltages": [
+            186,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+        ],
+        "current_battery": -678,
+        "current_consumed": -120,
+        "energy_consumed": 0,
+        "battery_remaining": -1,
+        "time_remaining": 0,
+        "charge_state": 6,
+        "voltages_ext": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "mode": 0,
+        "fault_bitmask": 0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 68736,
+        "roll": -0.023815864697098732,
+        "pitch": 0.002696871291846037,
+        "yaw": 1.3057137727737427,
+        "rollspeed": -0.00040034856647253036,
+        "pitchspeed": -0.000267871655523777,
+        "yawspeed": -0.000426120706833899
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.3700000047683716,
+        "climb": -0.08918683230876923
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 68736268,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "SYS_STATUS",
+        "onboard_control_sensors_present": 325188639,
+        "onboard_control_sensors_enabled": 306249743,
+        "onboard_control_sensors_health": 17858575,
+        "load": 22,
+        "voltage_battery": 188,
+        "current_battery": -1,
+        "battery_remaining": -1,
+        "drop_rate_comm": 0,
+        "errors_comm": 0,
+        "errors_count1": 0,
+        "errors_count2": 0,
+        "errors_count3": 0,
+        "errors_count4": 0
+    },
+    {
+        "mavpackettype": "POWER_STATUS",
+        "Vcc": 5219,
+        "Vservo": 0,
+        "flags": 4
+    },
+    {
+        "mavpackettype": "MEMINFO",
+        "brkval": 0,
+        "freemem": 65535,
+        "freemem32": 615736
+    },
+    {
+        "mavpackettype": "MISSION_CURRENT",
+        "seq": 0,
+        "total": 0,
+        "mission_state": 1,
+        "mission_mode": 0
+    },
+    {
+        "mavpackettype": "SERVO_OUTPUT_RAW",
+        "time_usec": 68836302,
+        "port": 0,
+        "servo1_raw": 1500,
+        "servo2_raw": 1500,
+        "servo3_raw": 1100,
+        "servo4_raw": 1500,
+        "servo5_raw": 0,
+        "servo6_raw": 0,
+        "servo7_raw": 0,
+        "servo8_raw": 0,
+        "servo9_raw": 0,
+        "servo10_raw": 0,
+        "servo11_raw": 0,
+        "servo12_raw": 0,
+        "servo13_raw": 0,
+        "servo14_raw": 0,
+        "servo15_raw": 0,
+        "servo16_raw": 0
+    },
+    {
+        "mavpackettype": "RC_CHANNELS",
+        "time_boot_ms": 68836,
+        "chancount": 0,
+        "chan1_raw": 0,
+        "chan2_raw": 1488,
+        "chan3_raw": 1493,
+        "chan4_raw": 1497,
+        "chan5_raw": 0,
+        "chan6_raw": 0,
+        "chan7_raw": 0,
+        "chan8_raw": 0,
+        "chan9_raw": 0,
+        "chan10_raw": 0,
+        "chan11_raw": 0,
+        "chan12_raw": 0,
+        "chan13_raw": 0,
+        "chan14_raw": 0,
+        "chan15_raw": 0,
+        "chan16_raw": 0,
+        "chan17_raw": 0,
+        "chan18_raw": 0,
+        "rssi": 255
+    },
+    {
+        "mavpackettype": "RAW_IMU",
+        "time_usec": 68836364,
+        "xacc": 38,
+        "yacc": 34,
+        "zacc": -1001,
+        "xgyro": 5,
+        "ygyro": -5,
+        "zgyro": 2,
+        "xmag": 180,
+        "ymag": -650,
+        "zmag": -519,
+        "id": 0,
+        "temperature": 4480
+    },
+    {
+        "mavpackettype": "SCALED_IMU2",
+        "time_boot_ms": 68836,
+        "xacc": 9,
+        "yacc": 17,
+        "zacc": -999,
+        "xgyro": 0,
+        "ygyro": 0,
+        "zgyro": 1,
+        "xmag": 0,
+        "ymag": 0,
+        "zmag": 0,
+        "temperature": 4650
+    },
+    {
+        "mavpackettype": "SCALED_PRESSURE",
+        "time_boot_ms": 68836,
+        "press_abs": 1008.5700073242188,
+        "press_diff": 0.0,
+        "temperature": 3990,
+        "temperature_press_diff": 0
+    },
+    {
+        "mavpackettype": "GPS_RAW_INT",
+        "time_usec": 0,
+        "fix_type": 0,
+        "lat": 0,
+        "lon": 0,
+        "alt": 0,
+        "eph": 65535,
+        "epv": 65535,
+        "vel": 0,
+        "cog": 0,
+        "satellites_visible": 0,
+        "alt_ellipsoid": 0,
+        "h_acc": 0,
+        "v_acc": 0,
+        "vel_acc": 0,
+        "hdg_acc": 0,
+        "yaw": 0
+    },
+    {
+        "mavpackettype": "MCU_STATUS",
+        "id": 0,
+        "MCU_temperature": 4968,
+        "MCU_voltage": 3225,
+        "MCU_voltage_min": 1785,
+        "MCU_voltage_max": 3240
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 68836,
+        "roll": -0.023862412199378014,
+        "pitch": 0.002686434658244252,
+        "yaw": 1.3057814836502075,
+        "rollspeed": 0.0020706120412796736,
+        "pitchspeed": -0.0013071666471660137,
+        "yawspeed": 0.0010389650706201792
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.23999999463558197,
+        "climb": -0.281688928604126
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 68836612,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 68936,
+        "roll": -0.023898404091596603,
+        "pitch": 0.0026912956964224577,
+        "yaw": 1.3058017492294312,
+        "rollspeed": 0.0006142107304185629,
+        "pitchspeed": -0.0008741947822272778,
+        "yawspeed": 0.00012727093417197466
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.28999999165534973,
+        "climb": -0.16689404845237732
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 68936327,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "GLOBAL_POSITION_INT",
+        "time_boot_ms": 69016,
+        "lat": 0,
+        "lon": 0,
+        "alt": 370,
+        "relative_alt": 370,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "hdg": 7481
+    },
+    {
+        "mavpackettype": "SYSTEM_TIME",
+        "time_unix_usec": 0,
+        "time_boot_ms": 69016
+    },
+    {
+        "mavpackettype": "AHRS",
+        "omegaIx": -0.00368371675722301,
+        "omegaIy": 0.004648619331419468,
+        "omegaIz": -0.001360008493065834,
+        "accel_weight": 0.0,
+        "renorm_val": 0.0,
+        "error_rp": 0.00597043801099062,
+        "error_yaw": 0.004202712792903185
+    },
+    {
+        "mavpackettype": "WIND",
+        "direction": -180.0,
+        "speed": 0.0,
+        "speed_z": 0.0
+    },
+    {
+        "mavpackettype": "TERRAIN_REPORT",
+        "lat": 0,
+        "lon": 0,
+        "spacing": 100,
+        "terrain_height": 0.0,
+        "current_height": 0.0,
+        "pending": 0,
+        "loaded": 0
+    },
+    {
+        "mavpackettype": "EKF_STATUS_REPORT",
+        "flags": 1024,
+        "velocity_variance": 0.0,
+        "pos_horiz_variance": 0.0,
+        "pos_vert_variance": 0.0,
+        "compass_variance": 0.0,
+        "terrain_alt_variance": 0.0,
+        "airspeed_variance": 0.0
+    },
+    {
+        "mavpackettype": "VIBRATION",
+        "time_usec": 69016467,
+        "vibration_x": 0.007870648987591267,
+        "vibration_y": 0.010624371469020844,
+        "vibration_z": 0.016101162880659103,
+        "clipping_0": 0,
+        "clipping_1": 0,
+        "clipping_2": 0
+    },
+    {
+        "mavpackettype": "BATTERY_STATUS",
+        "id": 0,
+        "battery_function": 0,
+        "type": 0,
+        "temperature": 32767,
+        "voltages": [
+            185,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+        ],
+        "current_battery": -679,
+        "current_consumed": -121,
+        "energy_consumed": 0,
+        "battery_remaining": -1,
+        "time_remaining": 0,
+        "charge_state": 6,
+        "voltages_ext": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "mode": 0,
+        "fault_bitmask": 0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 69036,
+        "roll": -0.023911867290735245,
+        "pitch": 0.002720634685829282,
+        "yaw": 1.3058432340621948,
+        "rollspeed": 0.0008215552661567926,
+        "pitchspeed": -0.0004494073800742626,
+        "yawspeed": 0.00038821110501885414
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.3700000047683716,
+        "climb": 0.02649114280939102
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 69036278,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 69136,
+        "roll": -0.023958580568432808,
+        "pitch": 0.002734101377427578,
+        "yaw": 1.305996298789978,
+        "rollspeed": -0.001610098173841834,
+        "pitchspeed": -0.000237360130995512,
+        "yawspeed": -3.628828562796116e-05
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.29999998211860657,
+        "climb": 0.12274216115474701
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 69136276,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 69236,
+        "roll": -0.02395392209291458,
+        "pitch": 0.002734520472586155,
+        "yaw": 1.306135654449463,
+        "rollspeed": 0.00022905669175088406,
+        "pitchspeed": -0.0010654814541339874,
+        "yawspeed": 0.0003989889519289136
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.28999999165534973,
+        "climb": 0.158946692943573
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 69236293,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "HEARTBEAT",
+        "type": 1,
+        "autopilot": 3,
+        "base_mode": 81,
+        "custom_mode": 0,
+        "system_status": 3,
+        "mavlink_version": 3
+    },
+    {
+        "mavpackettype": "GLOBAL_POSITION_INT",
+        "time_boot_ms": 69336,
+        "lat": 0,
+        "lon": 0,
+        "alt": 250,
+        "relative_alt": 257,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "hdg": 7484
+    },
+    {
+        "mavpackettype": "SYSTEM_TIME",
+        "time_unix_usec": 0,
+        "time_boot_ms": 69336
+    },
+    {
+        "mavpackettype": "AHRS",
+        "omegaIx": -0.00368371675722301,
+        "omegaIy": 0.004648619331419468,
+        "omegaIz": -0.001360008493065834,
+        "accel_weight": 0.0,
+        "renorm_val": 0.0,
+        "error_rp": 0.005679699592292309,
+        "error_yaw": 0.005895382259041071
+    },
+    {
+        "mavpackettype": "WIND",
+        "direction": -180.0,
+        "speed": 0.0,
+        "speed_z": 0.0
+    },
+    {
+        "mavpackettype": "TERRAIN_REPORT",
+        "lat": 0,
+        "lon": 0,
+        "spacing": 100,
+        "terrain_height": 0.0,
+        "current_height": 0.0,
+        "pending": 0,
+        "loaded": 0
+    },
+    {
+        "mavpackettype": "EKF_STATUS_REPORT",
+        "flags": 1024,
+        "velocity_variance": 0.0,
+        "pos_horiz_variance": 0.0,
+        "pos_vert_variance": 0.0,
+        "compass_variance": 0.0,
+        "terrain_alt_variance": 0.0,
+        "airspeed_variance": 0.0
+    },
+    {
+        "mavpackettype": "VIBRATION",
+        "time_usec": 69336496,
+        "vibration_x": 0.008095749653875828,
+        "vibration_y": 0.008833060041069984,
+        "vibration_z": 0.013236088678240776,
+        "clipping_0": 0,
+        "clipping_1": 0,
+        "clipping_2": 0
+    },
+    {
+        "mavpackettype": "BATTERY_STATUS",
+        "id": 0,
+        "battery_function": 0,
+        "type": 0,
+        "temperature": 32767,
+        "voltages": [
+            184,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+        ],
+        "current_battery": -680,
+        "current_consumed": -121,
+        "energy_consumed": 0,
+        "battery_remaining": -1,
+        "time_remaining": 0,
+        "charge_state": 6,
+        "voltages_ext": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "mode": 0,
+        "fault_bitmask": 0
+    },
+    {
+        "mavpackettype": "SYS_STATUS",
+        "onboard_control_sensors_present": 325188639,
+        "onboard_control_sensors_enabled": 306249743,
+        "onboard_control_sensors_health": 17858575,
+        "load": 21,
+        "voltage_battery": 184,
+        "current_battery": -1,
+        "battery_remaining": -1,
+        "drop_rate_comm": 0,
+        "errors_comm": 0,
+        "errors_count1": 0,
+        "errors_count2": 0,
+        "errors_count3": 0,
+        "errors_count4": 0
+    },
+    {
+        "mavpackettype": "POWER_STATUS",
+        "Vcc": 5221,
+        "Vservo": 0,
+        "flags": 4
+    },
+    {
+        "mavpackettype": "MEMINFO",
+        "brkval": 0,
+        "freemem": 65535,
+        "freemem32": 615736
+    },
+    {
+        "mavpackettype": "MISSION_CURRENT",
+        "seq": 0,
+        "total": 0,
+        "mission_state": 1,
+        "mission_mode": 0
+    },
+    {
+        "mavpackettype": "SERVO_OUTPUT_RAW",
+        "time_usec": 69336623,
+        "port": 0,
+        "servo1_raw": 1500,
+        "servo2_raw": 1500,
+        "servo3_raw": 1100,
+        "servo4_raw": 1500,
+        "servo5_raw": 0,
+        "servo6_raw": 0,
+        "servo7_raw": 0,
+        "servo8_raw": 0,
+        "servo9_raw": 0,
+        "servo10_raw": 0,
+        "servo11_raw": 0,
+        "servo12_raw": 0,
+        "servo13_raw": 0,
+        "servo14_raw": 0,
+        "servo15_raw": 0,
+        "servo16_raw": 0
+    },
+    {
+        "mavpackettype": "RC_CHANNELS",
+        "time_boot_ms": 69336,
+        "chancount": 0,
+        "chan1_raw": 0,
+        "chan2_raw": 1488,
+        "chan3_raw": 1493,
+        "chan4_raw": 1497,
+        "chan5_raw": 0,
+        "chan6_raw": 0,
+        "chan7_raw": 0,
+        "chan8_raw": 0,
+        "chan9_raw": 0,
+        "chan10_raw": 0,
+        "chan11_raw": 0,
+        "chan12_raw": 0,
+        "chan13_raw": 0,
+        "chan14_raw": 0,
+        "chan15_raw": 0,
+        "chan16_raw": 0,
+        "chan17_raw": 0,
+        "chan18_raw": 0,
+        "rssi": 255
+    },
+    {
+        "mavpackettype": "RAW_IMU",
+        "time_usec": 69336675,
+        "xacc": 38,
+        "yacc": 34,
+        "zacc": -1002,
+        "xgyro": 4,
+        "ygyro": -5,
+        "zgyro": 1,
+        "xmag": 174,
+        "ymag": -655,
+        "zmag": -522,
+        "id": 0,
+        "temperature": 4480
+    },
+    {
+        "mavpackettype": "SCALED_IMU2",
+        "time_boot_ms": 69336,
+        "xacc": 10,
+        "yacc": 18,
+        "zacc": -1001,
+        "xgyro": 0,
+        "ygyro": -4,
+        "zgyro": 1,
+        "xmag": 0,
+        "ymag": 0,
+        "zmag": 0,
+        "temperature": 4650
+    },
+    {
+        "mavpackettype": "SCALED_PRESSURE",
+        "time_boot_ms": 69336,
+        "press_abs": 1008.5687255859375,
+        "press_diff": 0.0,
+        "temperature": 3990,
+        "temperature_press_diff": 0
+    },
+    {
+        "mavpackettype": "GPS_RAW_INT",
+        "time_usec": 0,
+        "fix_type": 0,
+        "lat": 0,
+        "lon": 0,
+        "alt": 0,
+        "eph": 65535,
+        "epv": 65535,
+        "vel": 0,
+        "cog": 0,
+        "satellites_visible": 0,
+        "alt_ellipsoid": 0,
+        "h_acc": 0,
+        "v_acc": 0,
+        "vel_acc": 0,
+        "hdg_acc": 0,
+        "yaw": 0
+    },
+    {
+        "mavpackettype": "MCU_STATUS",
+        "id": 0,
+        "MCU_temperature": 4962,
+        "MCU_voltage": 3225,
+        "MCU_voltage_min": 1785,
+        "MCU_voltage_max": 3240
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 69336,
+        "roll": -0.023996146395802498,
+        "pitch": 0.0027777086943387985,
+        "yaw": 1.306230902671814,
+        "rollspeed": 0.00038321386091411114,
+        "pitchspeed": -0.0008465270511806011,
+        "yawspeed": 6.089091766625643e-05
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.25,
+        "climb": 0.04591793566942215
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 69356251,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 69436,
+        "roll": -0.023979943245649338,
+        "pitch": 0.002810339443385601,
+        "yaw": 1.3064287900924683,
+        "rollspeed": 0.0017168058548122644,
+        "pitchspeed": -0.00021239276975393295,
+        "yawspeed": 0.0008798015769571066
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.09999999403953552,
+        "climb": -0.208396777510643
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 69436320,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 69536,
+        "roll": -0.024005990475416183,
+        "pitch": 0.0027833697386085987,
+        "yaw": 1.3065558671951294,
+        "rollspeed": 0.0010543682146817446,
+        "pitchspeed": -0.0013549490831792355,
+        "yawspeed": 0.0006831872742623091
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.2199999988079071,
+        "climb": -0.429156094789505
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 69536306,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 69636,
+        "roll": -0.024021698161959648,
+        "pitch": 0.002793770283460617,
+        "yaw": 1.3066024780273438,
+        "rollspeed": -0.0006196724716573954,
+        "pitchspeed": -0.001192005816847086,
+        "yawspeed": 0.00015723996330052614
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.2800000011920929,
+        "climb": -0.42120879888534546
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 69636334,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "GLOBAL_POSITION_INT",
+        "time_boot_ms": 69676,
+        "lat": 0,
+        "lon": 0,
+        "alt": 280,
+        "relative_alt": 324,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "hdg": 7486
+    },
+    {
+        "mavpackettype": "SYSTEM_TIME",
+        "time_unix_usec": 0,
+        "time_boot_ms": 69676
+    },
+    {
+        "mavpackettype": "AHRS",
+        "omegaIx": -0.00368371675722301,
+        "omegaIy": 0.004648619331419468,
+        "omegaIz": -0.001360008493065834,
+        "accel_weight": 0.0,
+        "renorm_val": 0.0,
+        "error_rp": 0.005607772618532181,
+        "error_yaw": 0.004702368751168251
+    },
+    {
+        "mavpackettype": "WIND",
+        "direction": -180.0,
+        "speed": 0.0,
+        "speed_z": 0.0
+    },
+    {
+        "mavpackettype": "TERRAIN_REPORT",
+        "lat": 0,
+        "lon": 0,
+        "spacing": 100,
+        "terrain_height": 0.0,
+        "current_height": 0.0,
+        "pending": 0,
+        "loaded": 0
+    },
+    {
+        "mavpackettype": "EKF_STATUS_REPORT",
+        "flags": 1024,
+        "velocity_variance": 0.0,
+        "pos_horiz_variance": 0.0,
+        "pos_vert_variance": 0.0,
+        "compass_variance": 0.0,
+        "terrain_alt_variance": 0.0,
+        "airspeed_variance": 0.0
+    },
+    {
+        "mavpackettype": "VIBRATION",
+        "time_usec": 69676428,
+        "vibration_x": 0.008336144499480724,
+        "vibration_y": 0.008253689855337143,
+        "vibration_z": 0.010090911760926247,
+        "clipping_0": 0,
+        "clipping_1": 0,
+        "clipping_2": 0
+    },
+    {
+        "mavpackettype": "BATTERY_STATUS",
+        "id": 0,
+        "battery_function": 0,
+        "type": 0,
+        "temperature": 32767,
+        "voltages": [
+            186,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+        ],
+        "current_battery": -679,
+        "current_consumed": -122,
+        "energy_consumed": 0,
+        "battery_remaining": -1,
+        "time_remaining": 0,
+        "charge_state": 6,
+        "voltages_ext": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "mode": 0,
+        "fault_bitmask": 0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 69736,
+        "roll": -0.024076107889413834,
+        "pitch": 0.0028334571979939938,
+        "yaw": 1.3066339492797852,
+        "rollspeed": 0.0005399936344474554,
+        "pitchspeed": -0.00038056541234254837,
+        "yawspeed": -0.0001657474786043167
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 74,
+        "throttle": 0,
+        "alt": 0.3199999928474426,
+        "climb": -0.05739746242761612
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 69736316,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "SYS_STATUS",
+        "onboard_control_sensors_present": 325188639,
+        "onboard_control_sensors_enabled": 306249743,
+        "onboard_control_sensors_health": 17858575,
+        "load": 22,
+        "voltage_battery": 185,
+        "current_battery": -1,
+        "battery_remaining": -1,
+        "drop_rate_comm": 0,
+        "errors_comm": 0,
+        "errors_count1": 0,
+        "errors_count2": 0,
+        "errors_count3": 0,
+        "errors_count4": 0
+    },
+    {
+        "mavpackettype": "POWER_STATUS",
+        "Vcc": 5221,
+        "Vservo": 0,
+        "flags": 4
+    },
+    {
+        "mavpackettype": "MEMINFO",
+        "brkval": 0,
+        "freemem": 65535,
+        "freemem32": 615736
+    },
+    {
+        "mavpackettype": "TIMESYNC",
+        "tc1": 0,
+        "ts1": 256296308001
+    },
+    {
+        "mavpackettype": "HEARTBEAT",
+        "type": 1,
+        "autopilot": 3,
+        "base_mode": 81,
+        "custom_mode": 0,
+        "system_status": 3,
+        "mavlink_version": 3
+    },
+    {
+        "mavpackettype": "MISSION_CURRENT",
+        "seq": 0,
+        "total": 0,
+        "mission_state": 1,
+        "mission_mode": 0
+    },
+    {
+        "mavpackettype": "SERVO_OUTPUT_RAW",
+        "time_usec": 256296370,
+        "port": 0,
+        "servo1_raw": 1500,
+        "servo2_raw": 1500,
+        "servo3_raw": 1100,
+        "servo4_raw": 1500,
+        "servo5_raw": 0,
+        "servo6_raw": 0,
+        "servo7_raw": 0,
+        "servo8_raw": 0,
+        "servo9_raw": 0,
+        "servo10_raw": 0,
+        "servo11_raw": 0,
+        "servo12_raw": 0,
+        "servo13_raw": 0,
+        "servo14_raw": 0,
+        "servo15_raw": 0,
+        "servo16_raw": 0
+    },
+    {
+        "mavpackettype": "RC_CHANNELS",
+        "time_boot_ms": 256296,
+        "chancount": 0,
+        "chan1_raw": 0,
+        "chan2_raw": 1488,
+        "chan3_raw": 1493,
+        "chan4_raw": 1497,
+        "chan5_raw": 0,
+        "chan6_raw": 0,
+        "chan7_raw": 0,
+        "chan8_raw": 0,
+        "chan9_raw": 0,
+        "chan10_raw": 0,
+        "chan11_raw": 0,
+        "chan12_raw": 0,
+        "chan13_raw": 0,
+        "chan14_raw": 0,
+        "chan15_raw": 0,
+        "chan16_raw": 0,
+        "chan17_raw": 0,
+        "chan18_raw": 0,
+        "rssi": 255
+    },
+    {
+        "mavpackettype": "RAW_IMU",
+        "time_usec": 256296471,
+        "xacc": 37,
+        "yacc": 24,
+        "zacc": -1006,
+        "xgyro": 8,
+        "ygyro": -5,
+        "zgyro": 1,
+        "xmag": 187,
+        "ymag": -677,
+        "zmag": -505,
+        "id": 0,
+        "temperature": 4480
+    },
+    {
+        "mavpackettype": "SCALED_IMU2",
+        "time_boot_ms": 256296,
+        "xacc": 7,
+        "yacc": 16,
+        "zacc": -1001,
+        "xgyro": 2,
+        "ygyro": 2,
+        "zgyro": 0,
+        "xmag": 0,
+        "ymag": 0,
+        "zmag": 0,
+        "temperature": 4650
+    },
+    {
+        "mavpackettype": "SCALED_PRESSURE",
+        "time_boot_ms": 256296,
+        "press_abs": 1008.5620727539062,
+        "press_diff": 0.0,
+        "temperature": 4046,
+        "temperature_press_diff": 0
+    },
+    {
+        "mavpackettype": "GPS_RAW_INT",
+        "time_usec": 0,
+        "fix_type": 0,
+        "lat": 0,
+        "lon": 0,
+        "alt": 0,
+        "eph": 65535,
+        "epv": 65535,
+        "vel": 0,
+        "cog": 0,
+        "satellites_visible": 0,
+        "alt_ellipsoid": 0,
+        "h_acc": 0,
+        "v_acc": 0,
+        "vel_acc": 0,
+        "hdg_acc": 0,
+        "yaw": 0
+    },
+    {
+        "mavpackettype": "MCU_STATUS",
+        "id": 0,
+        "MCU_temperature": 5023,
+        "MCU_voltage": 3224,
+        "MCU_voltage_min": 1785,
+        "MCU_voltage_max": 3240
+    },
+    {
+        "mavpackettype": "GLOBAL_POSITION_INT",
+        "time_boot_ms": 256296,
+        "lat": 0,
+        "lon": 0,
+        "alt": 310,
+        "relative_alt": 313,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "hdg": 7530
+    },
+    {
+        "mavpackettype": "SYSTEM_TIME",
+        "time_unix_usec": 0,
+        "time_boot_ms": 256296
+    },
+    {
+        "mavpackettype": "AHRS",
+        "omegaIx": -0.0044289203360676765,
+        "omegaIy": 0.005294540897011757,
+        "omegaIz": -0.0016446539666503668,
+        "accel_weight": 0.0,
+        "renorm_val": 0.0,
+        "error_rp": 0.000963680213317275,
+        "error_yaw": 0.0033973546233028173
+    },
+    {
+        "mavpackettype": "WIND",
+        "direction": -180.0,
+        "speed": 0.0,
+        "speed_z": 0.0
+    },
+    {
+        "mavpackettype": "TERRAIN_REPORT",
+        "lat": 0,
+        "lon": 0,
+        "spacing": 100,
+        "terrain_height": 0.0,
+        "current_height": 0.0,
+        "pending": 0,
+        "loaded": 0
+    },
+    {
+        "mavpackettype": "EKF_STATUS_REPORT",
+        "flags": 1024,
+        "velocity_variance": 0.0,
+        "pos_horiz_variance": 0.0,
+        "pos_vert_variance": 0.0,
+        "compass_variance": 0.0,
+        "terrain_alt_variance": 0.0,
+        "airspeed_variance": 0.0
+    },
+    {
+        "mavpackettype": "VIBRATION",
+        "time_usec": 256296746,
+        "vibration_x": 0.01996626891195774,
+        "vibration_y": 0.019611505791544914,
+        "vibration_z": 0.09008755534887314,
+        "clipping_0": 0,
+        "clipping_1": 0,
+        "clipping_2": 0
+    },
+    {
+        "mavpackettype": "BATTERY_STATUS",
+        "id": 0,
+        "battery_function": 0,
+        "type": 0,
+        "temperature": 32767,
+        "voltages": [
+            187,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+        ],
+        "current_battery": -678,
+        "current_consumed": -474,
+        "energy_consumed": -3,
+        "battery_remaining": -1,
+        "time_remaining": 0,
+        "charge_state": 6,
+        "voltages_ext": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "mode": 0,
+        "fault_bitmask": 0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 256296,
+        "roll": -0.023644914850592613,
+        "pitch": 0.006231848616153002,
+        "yaw": 1.3143706321716309,
+        "rollspeed": 0.004132263362407684,
+        "pitchspeed": 1.4631077647209167e-06,
+        "yawspeed": 0.00029425579123198986
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.3100000023841858,
+        "climb": -0.12539128959178925
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 256296831,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 256396,
+        "roll": -0.02387935295701027,
+        "pitch": 0.006275602150708437,
+        "yaw": 1.3142415285110474,
+        "rollspeed": -0.0037108496762812138,
+        "pitchspeed": -4.981923848390579e-05,
+        "yawspeed": -0.0006587943062186241
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.2800000011920929,
+        "climb": -0.2755076587200165
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 256396358,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 256496,
+        "roll": -0.02368033491075039,
+        "pitch": 0.006307419389486313,
+        "yaw": 1.3141978979110718,
+        "rollspeed": 0.00028046127408742905,
+        "pitchspeed": 0.0005662534385919571,
+        "yawspeed": 0.00015788141172379255
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.3999999761581421,
+        "climb": -0.23665401339530945
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 256496377,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 256596,
+        "roll": -0.023808065801858902,
+        "pitch": 0.006332273129373789,
+        "yaw": 1.3141041994094849,
+        "rollspeed": -0.0002859951928257942,
+        "pitchspeed": 0.00029279571026563644,
+        "yawspeed": -3.044272307306528e-05
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.3400000035762787,
+        "climb": -0.016777722164988518
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 256596552,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "GLOBAL_POSITION_INT",
+        "time_boot_ms": 256636,
+        "lat": 0,
+        "lon": 0,
+        "alt": 340,
+        "relative_alt": 341,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "hdg": 7529
+    },
+    {
+        "mavpackettype": "SYSTEM_TIME",
+        "time_unix_usec": 0,
+        "time_boot_ms": 256636
+    },
+    {
+        "mavpackettype": "AHRS",
+        "omegaIx": -0.0044289203360676765,
+        "omegaIy": 0.005294540897011757,
+        "omegaIz": -0.0016446539666503668,
+        "accel_weight": 0.0,
+        "renorm_val": 0.0,
+        "error_rp": 0.0009626388200558722,
+        "error_yaw": 0.00392460310831666
+    },
+    {
+        "mavpackettype": "WIND",
+        "direction": -180.0,
+        "speed": 0.0,
+        "speed_z": 0.0
+    },
+    {
+        "mavpackettype": "TERRAIN_REPORT",
+        "lat": 0,
+        "lon": 0,
+        "spacing": 100,
+        "terrain_height": 0.0,
+        "current_height": 0.0,
+        "pending": 0,
+        "loaded": 0
+    },
+    {
+        "mavpackettype": "EKF_STATUS_REPORT",
+        "flags": 1024,
+        "velocity_variance": 0.0,
+        "pos_horiz_variance": 0.0,
+        "pos_vert_variance": 0.0,
+        "compass_variance": 0.0,
+        "terrain_alt_variance": 0.0,
+        "airspeed_variance": 0.0
+    },
+    {
+        "mavpackettype": "VIBRATION",
+        "time_usec": 256636494,
+        "vibration_x": 0.007577266078442335,
+        "vibration_y": 0.007678671274334192,
+        "vibration_z": 0.014095444232225418,
+        "clipping_0": 0,
+        "clipping_1": 0,
+        "clipping_2": 0
+    },
+    {
+        "mavpackettype": "BATTERY_STATUS",
+        "id": 0,
+        "battery_function": 0,
+        "type": 0,
+        "temperature": 32767,
+        "voltages": [
+            185,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+        ],
+        "current_battery": -681,
+        "current_consumed": -475,
+        "energy_consumed": -3,
+        "battery_remaining": -1,
+        "time_remaining": 0,
+        "charge_state": 6,
+        "voltages_ext": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "mode": 0,
+        "fault_bitmask": 0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 256716,
+        "roll": -0.023741278797388077,
+        "pitch": 0.006403764244168997,
+        "yaw": 1.3141496181488037,
+        "rollspeed": -0.0007063897792249918,
+        "pitchspeed": 0.001029804814606905,
+        "yawspeed": -0.0010480531491339207
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.26999998092651367,
+        "climb": 0.15188243985176086
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 256716265,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "SYS_STATUS",
+        "onboard_control_sensors_present": 325188639,
+        "onboard_control_sensors_enabled": 306249743,
+        "onboard_control_sensors_health": 17858575,
+        "load": 21,
+        "voltage_battery": 188,
+        "current_battery": -1,
+        "battery_remaining": -1,
+        "drop_rate_comm": 0,
+        "errors_comm": 0,
+        "errors_count1": 0,
+        "errors_count2": 0,
+        "errors_count3": 0,
+        "errors_count4": 0
+    },
+    {
+        "mavpackettype": "POWER_STATUS",
+        "Vcc": 5221,
+        "Vservo": 0,
+        "flags": 4
+    },
+    {
+        "mavpackettype": "MEMINFO",
+        "brkval": 0,
+        "freemem": 65535,
+        "freemem32": 615608
+    },
+    {
+        "mavpackettype": "MISSION_CURRENT",
+        "seq": 0,
+        "total": 0,
+        "mission_state": 1,
+        "mission_mode": 0
+    },
+    {
+        "mavpackettype": "SERVO_OUTPUT_RAW",
+        "time_usec": 256796412,
+        "port": 0,
+        "servo1_raw": 1500,
+        "servo2_raw": 1500,
+        "servo3_raw": 1100,
+        "servo4_raw": 1500,
+        "servo5_raw": 0,
+        "servo6_raw": 0,
+        "servo7_raw": 0,
+        "servo8_raw": 0,
+        "servo9_raw": 0,
+        "servo10_raw": 0,
+        "servo11_raw": 0,
+        "servo12_raw": 0,
+        "servo13_raw": 0,
+        "servo14_raw": 0,
+        "servo15_raw": 0,
+        "servo16_raw": 0
+    },
+    {
+        "mavpackettype": "RC_CHANNELS",
+        "time_boot_ms": 256796,
+        "chancount": 0,
+        "chan1_raw": 0,
+        "chan2_raw": 1488,
+        "chan3_raw": 1493,
+        "chan4_raw": 1497,
+        "chan5_raw": 0,
+        "chan6_raw": 0,
+        "chan7_raw": 0,
+        "chan8_raw": 0,
+        "chan9_raw": 0,
+        "chan10_raw": 0,
+        "chan11_raw": 0,
+        "chan12_raw": 0,
+        "chan13_raw": 0,
+        "chan14_raw": 0,
+        "chan15_raw": 0,
+        "chan16_raw": 0,
+        "chan17_raw": 0,
+        "chan18_raw": 0,
+        "rssi": 255
+    },
+    {
+        "mavpackettype": "RAW_IMU",
+        "time_usec": 256796488,
+        "xacc": 37,
+        "yacc": 25,
+        "zacc": -1006,
+        "xgyro": 6,
+        "ygyro": -4,
+        "zgyro": 1,
+        "xmag": 185,
+        "ymag": -679,
+        "zmag": -504,
+        "id": 0,
+        "temperature": 4432
+    },
+    {
+        "mavpackettype": "SCALED_IMU2",
+        "time_boot_ms": 256796,
+        "xacc": 8,
+        "yacc": 16,
+        "zacc": -999,
+        "xgyro": 0,
+        "ygyro": 0,
+        "zgyro": 1,
+        "xmag": 0,
+        "ymag": 0,
+        "zmag": 0,
+        "temperature": 4650
+    },
+    {
+        "mavpackettype": "SCALED_PRESSURE",
+        "time_boot_ms": 256796,
+        "press_abs": 1008.5603637695312,
+        "press_diff": 0.0,
+        "temperature": 4046,
+        "temperature_press_diff": 0
+    },
+    {
+        "mavpackettype": "GPS_RAW_INT",
+        "time_usec": 0,
+        "fix_type": 0,
+        "lat": 0,
+        "lon": 0,
+        "alt": 0,
+        "eph": 65535,
+        "epv": 65535,
+        "vel": 0,
+        "cog": 0,
+        "satellites_visible": 0,
+        "alt_ellipsoid": 0,
+        "h_acc": 0,
+        "v_acc": 0,
+        "vel_acc": 0,
+        "hdg_acc": 0,
+        "yaw": 0
+    },
+    {
+        "mavpackettype": "MCU_STATUS",
+        "id": 0,
+        "MCU_temperature": 5017,
+        "MCU_voltage": 3224,
+        "MCU_voltage_min": 1785,
+        "MCU_voltage_max": 3240
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 256796,
+        "roll": -0.02370256930589676,
+        "pitch": 0.006454192101955414,
+        "yaw": 1.3141793012619019,
+        "rollspeed": 0.0016953200101852417,
+        "pitchspeed": 0.0005120756104588509,
+        "yawspeed": -0.00018672202713787556
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.32999998331069946,
+        "climb": 0.05739744380116463
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 256796664,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 256896,
+        "roll": -0.023790499195456505,
+        "pitch": 0.006462082266807556,
+        "yaw": 1.314131498336792,
+        "rollspeed": -0.000930936774238944,
+        "pitchspeed": 4.834681749343872e-05,
+        "yawspeed": -0.0003142310306429863
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.3799999952316284,
+        "climb": -0.10773057490587234
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 256896395,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "GLOBAL_POSITION_INT",
+        "time_boot_ms": 256976,
+        "lat": 0,
+        "lon": 0,
+        "alt": 380,
+        "relative_alt": 285,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "hdg": 7528
+    },
+    {
+        "mavpackettype": "SYSTEM_TIME",
+        "time_unix_usec": 0,
+        "time_boot_ms": 256976
+    },
+    {
+        "mavpackettype": "AHRS",
+        "omegaIx": -0.0044289203360676765,
+        "omegaIy": 0.005294540897011757,
+        "omegaIz": -0.0016446539666503668,
+        "accel_weight": 0.0,
+        "renorm_val": 0.0,
+        "error_rp": 0.0010848981328308582,
+        "error_yaw": 0.004169745836406946
+    },
+    {
+        "mavpackettype": "WIND",
+        "direction": -180.0,
+        "speed": 0.0,
+        "speed_z": 0.0
+    },
+    {
+        "mavpackettype": "TERRAIN_REPORT",
+        "lat": 0,
+        "lon": 0,
+        "spacing": 100,
+        "terrain_height": 0.0,
+        "current_height": 0.0,
+        "pending": 0,
+        "loaded": 0
+    },
+    {
+        "mavpackettype": "EKF_STATUS_REPORT",
+        "flags": 1024,
+        "velocity_variance": 0.0,
+        "pos_horiz_variance": 0.0,
+        "pos_vert_variance": 0.0,
+        "compass_variance": 0.0,
+        "terrain_alt_variance": 0.0,
+        "airspeed_variance": 0.0
+    },
+    {
+        "mavpackettype": "VIBRATION",
+        "time_usec": 256976505,
+        "vibration_x": 0.008733171969652176,
+        "vibration_y": 0.007831811904907227,
+        "vibration_z": 0.00967180635780096,
+        "clipping_0": 0,
+        "clipping_1": 0,
+        "clipping_2": 0
+    },
+    {
+        "mavpackettype": "BATTERY_STATUS",
+        "id": 0,
+        "battery_function": 0,
+        "type": 0,
+        "temperature": 32767,
+        "voltages": [
+            188,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+        ],
+        "current_battery": -676,
+        "current_consumed": -475,
+        "energy_consumed": -3,
+        "battery_remaining": -1,
+        "time_remaining": 0,
+        "charge_state": 6,
+        "voltages_ext": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "mode": 0,
+        "fault_bitmask": 0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 256996,
+        "roll": -0.023654142394661903,
+        "pitch": 0.006472727749496698,
+        "yaw": 1.3140085935592651,
+        "rollspeed": 0.0010231356136500835,
+        "pitchspeed": 8.550146594643593e-05,
+        "yawspeed": 4.68097859993577e-05
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.2800000011920929,
+        "climb": -0.037970636039972305
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 256996552,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 257096,
+        "roll": -0.023750951513648033,
+        "pitch": 0.0064924247562885284,
+        "yaw": 1.3141553401947021,
+        "rollspeed": -0.001080353744328022,
+        "pitchspeed": -0.00025362009182572365,
+        "yawspeed": -0.0003507515648379922
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.4699999988079071,
+        "climb": 0.11567788571119308
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 257096372,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "ATTITUDE",
+        "time_boot_ms": 257196,
+        "roll": -0.023603621870279312,
+        "pitch": 0.0065356590785086155,
+        "yaw": 1.3140743970870972,
+        "rollspeed": 0.001435616984963417,
+        "pitchspeed": 0.0006932434625923634,
+        "yawspeed": 9.74135473370552e-05
+    },
+    {
+        "mavpackettype": "VFR_HUD",
+        "airspeed": 0.0,
+        "groundspeed": 0.0,
+        "heading": 75,
+        "throttle": 0,
+        "alt": 0.29999998211860657,
+        "climb": 0.1607128530740738
+    },
+    {
+        "mavpackettype": "AOA_SSA",
+        "time_usec": 257196364,
+        "AOA": 0.0,
+        "SSA": 0.0
+    },
+    {
+        "mavpackettype": "HEARTBEAT",
+        "type": 1,
+        "autopilot": 3,
+        "base_mode": 81,
+        "custom_mode": 0,
+        "system_status": 3,
+        "mavlink_version": 3
+    },
+    {
+        "mavpackettype": "GLOBAL_POSITION_INT",
+        "time_boot_ms": 257296,
+        "lat": 0,
+        "lon": 0,
+        "alt": 290,
+        "relative_alt": 299,
+        "vx": 0,
+        "vy": 0,
+        "vz": 0,
+        "hdg": 7528
+    },
+    {
+        "mavpackettype": "SYSTEM_TIME",
+        "time_unix_usec": 0,
+        "time_boot_ms": 257296
+    },
+    {
+        "mavpackettype": "AHRS",
+        "omegaIx": -0.0044289203360676765,
+        "omegaIy": 0.005294540897011757,
+        "omegaIz": -0.0016446539666503668,
+        "accel_weight": 0.0,
+        "renorm_val": 0.0,
+        "error_rp": 0.0011633156100288033,
+        "error_yaw": 0.0036363117396831512
+    }
+]
