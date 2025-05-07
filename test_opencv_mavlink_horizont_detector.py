@@ -9,6 +9,21 @@ from numpy.linalg import norm
 from crop_and_scale import get_cropping_and_scaling_parameters, crop_and_scale
 from draw_display import draw_horizon
 
+import time
+
+# for pwm in [1000, 1500, 2000, 1500]:
+#     print(f"Setting servo to {pwm}")
+#     move_servo(1, pwm)
+#     time.sleep(1.5)
+
+def normalize_roll(angle):
+    if angle is None:
+        return None
+    return angle - 360 if angle > 180 else angle
+
+
+
+
 POOLING_KERNEL_SIZE = 5
 FULL_ROTATION = 360
 crop_and_scale_parameters = get_cropping_and_scaling_parameters((1280,720), (100,100))
@@ -26,8 +41,6 @@ from pymavlink import mavutil
 
 
 #### here is mavlink side of code
-# Lista de possíveis portas de telemetria
-telemetry_ports = ["/dev/tty.usbmodem146401", "/dev/tty.usbmodem146403"]
 # Lista de possíveis portas de telemetria
 telemetry_ports = ["/dev/tty.usbmodem146401", "/dev/tty.usbmodem146403"]
 
@@ -123,6 +136,9 @@ class AttitudeIndicator(QOpenGLWidget):
         self.drawSpeedIndicator(0)  # Placeholder speed
         self.drawWindIndicator(10, 45)
         self.drawFlightMode("TEST")
+
+        # self.drawServoPosition(roll_angle)
+
 
         # 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 Check roll angle and display warning if needed
         if abs(roll_angle) > 70:
@@ -266,6 +282,18 @@ def move_servo(channel, pwm_value):
             0, 0, 0, 0, 0  # Parâmetros adicionais não usados no meu codigo no momento
         )
 
+def drawServoPosition(roll_angle):
+    glPushMatrix()
+    glLoadIdentity()
+    glTranslatef(-0.8, 0.8, 0)
+    glColor3f(1.0, 0.0, 0.0)
+
+    servo_pos = 0.5 + (roll_angle / 140.0)  # normalizado entre 0 e 1
+    glBegin(GL_LINES)
+    glVertex2f(0, 0)
+    glVertex2f(0, servo_pos * 0.2)
+    glEnd()
+    glPopMatrix()
 
 def update_attitude_data():
     global attitude_data
@@ -276,9 +304,14 @@ def update_attitude_data():
         attitude_data["yaw"] = msg.yaw
 
         roll_angle = np.degrees(attitude_data["roll"])
+        pitch_angle = np.degrees(attitude_data["pitch"])
+        yaw_angle = np.degrees(attitude_data["yaw"])
 
-        print(f"Roll: {roll_angle:.2f}°")
+        print(f"MAVLINK - Roll: {roll_angle:.2f}°")
 
+        # print(f"MAVLINK - pitch: {pitch_angle:.2f}°")
+
+        # print(f"MAVLINK - yaw: {yaw_angle:.2f}°")
 
         # nao esta ainda funcionando o codigo abaixo para mover os servo 
         # Se o roll ultrapassar ±70°, mover o servo para um ângulo diferente 
@@ -325,40 +358,6 @@ class HorizonDetector:
         self.predicted_roll = None
         self.predicted_pitch = None
         self.recent_horizons = [None, None]
-
-    '''def find_horizon(self, frame:np.ndarray):
-        roll, pitch, variance, is_good_horizon = None, None, None, None
-        ## here starts find horizon
-        bgr2gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        
-        # filter our blue from the sky
-        lower = np.array([109, 0, 116]) 
-        upper = np.array([153, 255, 255]) 
-        hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-        hsv_mask = cv2.inRange(hsv, lower, upper)
-        blue_filtered_greyscale = cv2.add(bgr2gray, hsv_mask)
-
-        # generate mask
-        blur = cv2.bilateralFilter(blue_filtered_greyscale,9,50,50)
-        _, mask = cv2.threshold(blur,250,255,cv2.THRESH_OTSU)
-        edges = cv2.Canny(image=bgr2gray, threshold1=200, threshold2=250) 
-        edges = skimage.measure.block_reduce(edges, (POOLING_KERNEL_SIZE , POOLING_KERNEL_SIZE), np.max)
-
-        # find contours
-        # chain = cv2.CHAIN_APPROX_SIMPLE
-        chain = cv2.CHAIN_APPROX_NONE 
-
-        try:
-            contours, _ = cv2.findContours(mask, cv2.RETR_TREE, chain)
-        except ValueError:
-            _, contours, _ = cv2.findContours(mask, cv2.RETR_TREE, chain)
-
-        largest_contour = sorted(contours, key=cv2.contourArea, reverse=True)[0] 
-
-        return edges
-        '''
-
-
 
     def find_horizon(self, frame:np.ndarray, diagnostic_mode:bool=True):
         """
@@ -692,6 +691,9 @@ def main():
             print("Failed to grab frame.")
             break
 
+        
+        #frame = cv2.imread("/Users/bernardolorenzini/Downloads/image.jpeg")
+
         scaled_and_cropped_frame = crop_and_scale(frame, **crop_and_scale_parameters)
 
         output = horizon_detector.find_horizon(scaled_and_cropped_frame, True)
@@ -699,8 +701,16 @@ def main():
         
         color = (255,0,0)       
         draw_horizon(frame, roll, pitch, horizon_detector.fov, color, True)
-        print(f'Calculated roll: {roll}')
-        print(f'Calculated pitch: {pitch}')
+
+        if roll is not None:
+            normalized_roll = normalize_roll(roll)
+            # continue processing
+
+        corrected_pitch = pitch
+
+
+        print(f'OPEN CV - Calculated roll: {normalized_roll:.2f}°')
+        # print(f'OPEN CV - Calculated pitch: {pitch}°')
         #final_image = horizon_detector.find_horizon(frame)
         #cv2.imshow("Webcam Feed", final_image)
         # draw center circle
