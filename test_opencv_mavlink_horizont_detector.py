@@ -13,7 +13,6 @@ import time
 
 def normalize_roll(angle):
     
-    
     if angle is None:
         return None
     return angle - 360 if angle > 180 else angle
