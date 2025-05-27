@@ -11,17 +11,12 @@ from draw_display import draw_horizon
 
 import time
 
-# for pwm in [1000, 1500, 2000, 1500]:
-#     print(f"Setting servo to {pwm}")
-#     move_servo(1, pwm)
-#     time.sleep(1.5)
-
 def normalize_roll(angle):
+    
+    
     if angle is None:
         return None
     return angle - 360 if angle > 180 else angle
-
-
 
 
 POOLING_KERNEL_SIZE = 5
@@ -141,7 +136,7 @@ class AttitudeIndicator(QOpenGLWidget):
 
 
         # 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 🔴 Check roll angle and display warning if needed
-        if abs(roll_angle) > 70:
+        if abs(roll_angle) > 40:
             print(f"ROLL WARNING: {roll_angle:.2f}°")  # Log the warning in the console
             self.drawWarningSign()  # Draw the warning sign
 
@@ -266,21 +261,6 @@ class AttitudeIndicator(QOpenGLWidget):
     def updateAttitude(self):
         self.update()
 
-def move_servo(channel, pwm_value):
-    """
-    Envia um comando para mover o servo na porta PWM especificada.
-    O pwm_value geralmente varia de 1000 (posição mínima) a 2000 (posição máxima).
-    """
-    if master:
-        master.mav.command_long_send(
-            master.target_system,
-            master.target_component,
-            mavutil.mavlink.MAV_CMD_DO_SET_SERVO,
-            0,  # Confirmation
-            channel,  # Canal PWM (no meu caso, 1)
-            pwm_value,  # Valor PWM (ex: 1500 é posição central)
-            0, 0, 0, 0, 0  # Parâmetros adicionais não usados no meu codigo no momento
-        )
 
 def drawServoPosition(roll_angle):
     glPushMatrix()
@@ -313,14 +293,7 @@ def update_attitude_data():
 
         # print(f"MAVLINK - yaw: {yaw_angle:.2f}°")
 
-        # nao esta ainda funcionando o codigo abaixo para mover os servo 
-        # Se o roll ultrapassar ±70°, mover o servo para um ângulo diferente 
-        if roll_angle > 70:
-            move_servo(1, 2000)  # Move o servo para a posição máxima
-        elif roll_angle < -70:
-            move_servo(1, 1000)  # Move o servo para a posição mínima
-        else:
-            move_servo(1, 1500)  # Retorna para a posição neutra
+
 
     QTimer.singleShot(50, update_attitude_data)
 
