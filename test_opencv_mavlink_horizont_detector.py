@@ -1,3 +1,8 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.metrics import mean_squared_error
+
+
 import cv2
 import sys
 
@@ -57,6 +62,10 @@ if master is None:
 
 # Attitude Data
 attitude_data = {"roll": 0.0, "pitch": 0.0, "yaw": 0.0}
+
+# Lista para armazenar log dos dados para comparação posterior
+log_data = []
+
 
 # Placeholder for battery data (voltage)
 battery_data = {"voltage": 12.0}  # Placeholder for battery voltage, in volts
@@ -659,6 +668,8 @@ def main():
 ##end mavlink and opengl 
     while True:
         ret, frame = cap.read()
+        frame = cv2.flip(frame, 1)  # Corrige o espelhamento horizontal
+
         if not ret:
             print("Failed to grab frame.")
             break
@@ -694,6 +705,14 @@ def main():
         cv2.imshow("frame", frame)
         cv2.imshow("mask", mask)
 
+        if roll is not None and pitch is not None:
+            log_data.append({
+                "timestamp": time.time(),
+                "roll_mav": degrees(attitude_data["roll"]),
+                "pitch_mav": degrees(attitude_data["pitch"]),
+                "roll_cv": roll,
+                "pitch_cv": pitch
+            })
 
         
 
@@ -703,6 +722,40 @@ def main():
 
     cap.release()
     cv2.destroyAllWindows()
+
+    # Criar DataFrame e salvar CSV
+    df = pd.DataFrame(log_data)
+    df.to_csv("comparacao_horizonte.csv", index=False)
+
+    # Calcular RMSE
+    roll_rmse = mean_squared_error(df["roll_mav"], df["roll_cv"], squared=False)
+    pitch_rmse = mean_squared_error(df["pitch_mav"], df["pitch_cv"], squared=False)
+
+    # Plotar gráficos
+    plt.figure()
+    plt.plot(df["timestamp"], df["roll_mav"], label="Roll MAVLink")
+    plt.plot(df["timestamp"], df["roll_cv"], label="Roll OpenCV", linestyle='--')
+    plt.xlabel("Tempo (s)")
+    plt.ylabel("Roll (graus)")
+    plt.title(f"Comparação Roll - RMSE: {roll_rmse:.2f}°")
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig("roll_comparison.png")
+
+    plt.figure()
+    plt.plot(df["timestamp"], df["pitch_mav"], label="Pitch MAVLink")
+    plt.plot(df["timestamp"], df["pitch_cv"], label="Pitch OpenCV", linestyle='--')
+    plt.xlabel("Tempo (s)")
+    plt.ylabel("Pitch (graus)")
+    plt.title(f"Comparação Pitch - RMSE: {pitch_rmse:.2f}°")
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig("pitch_comparison.png")
+
+    print("Gráficos e dados salvos com sucesso.")
+
 
 if __name__ == "__main__":
     
