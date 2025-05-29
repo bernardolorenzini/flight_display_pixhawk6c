@@ -645,6 +645,14 @@ class HorizonDetector:
             pitch_delta = pitch2 - pitch1
             self.predicted_pitch = pitch2 + pitch_delta
 
+def normalize_roll(angle):
+    """
+    Converte qualquer ângulo para o intervalo [-180°, +180°]
+    """
+    if angle is None:
+        return None
+    return (angle + 180) % 360 - 180
+
 def main():
     # Open the default webcam (index 0)
     cap = cv2.VideoCapture(0)
@@ -705,12 +713,12 @@ def main():
         cv2.imshow("frame", frame)
         cv2.imshow("mask", mask)
 
-        if roll is not None and pitch is not None:
+        if normalized_roll is not None and pitch is not None:
             log_data.append({
                 "timestamp": time.time(),
                 "roll_mav": degrees(attitude_data["roll"]),
                 "pitch_mav": degrees(attitude_data["pitch"]),
-                "roll_cv": roll,
+                "roll_cv": normalized_roll,
                 "pitch_cv": pitch
             })
 
